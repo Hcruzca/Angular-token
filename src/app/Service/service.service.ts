@@ -8,7 +8,7 @@ export class ServiceService {
 
   constructor(private http:HttpClient) { }
   Url='http://localhost:8098/personas';
-  getPersonas(){
+  getPersonaId(){
     return this.http.get<Persona[]>(this.Url)
   }
   
